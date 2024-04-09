@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiesta Flavors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="Logo/Fiesta-Flavors-Logo-2-circle.png" type="image/png">
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar">
+  <div class="logo">
+    <img src="Logo/Fiesta-Flavors-Logo-2-circle.png" alt="">
+  </div>
+  <div class="nav-section">
+    <ul class="nav-menu">
+      <li class="dropdown">
+        <a  class="view-menu btnMenu">Menu<i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-content">
+          <div class="submenu">
+          <a href="#">Best Sellers <i class="fa-solid fa-caret-right"></i></a>
+          <div class="submenu-content">
+            <a href="#">Lumpiang Shanghai</a>
+            <a href="#">Chicken Adobo</a>
+            <a href="#">Ube Halo-Halo</a>
+          </div>
+          </div>
+          <a href="#">Pork</a>
+          <a href="#">Vegetarian</a>
+          <div class="submenu">
+            <a href="#">Meryenda <i class="fa-solid fa-caret-right"></i></a>
+            <div class="submenu-content">
+              <a href="#">Kakanin</a>
+              <a href="#">Street Foods</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="/" class="order-in-nav btn">Order Now</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- MENU ITEMS -->
+  <div class="menu">
+    <h1 class="title">Carefully Curated Filipino Cuisine</h1>
+    <div class="description"><p>Experience the vibrant flavors of the Philippines with Fiesta Flavors' made-from-scratch regional specialties. Our chefs source only the freshest ingredients to craft classics like savory Adobo, sweet Halo-Halo ice cream desserts, and more.</p></div>
+    
+  <div id="best-sellers-menu" class="best-sellers">
+    <div class="menu-item">
+      <img src="Foods/Shanghai.jpg" alt="Lumpia">
+      <h2 class="food-name">Lumpia Shanghai</h2>
+      <p class="food-desc">Crispy deep fried pork and vegetable egg rolls served with sweet chili sauce.</p>
+      <p class="price">PRICE $10</p>
+      <button class="order-button">Order</button>
+    </div>
+    
+    <div class="menu-item">
+      <img src="Foods/Adobo.jpg" alt="Adobo">
+      <h2 class="food-name">Chicken Adobo</h2>
+      <p class="food-desc">Tender chicken simmered in a garlic soy sauce and vinegar sauce. Served with rice.</p>
+      <p class="price">PRICE $15</p>
+      <button class="order-button">Order</button>
+    </div>
+    
+    <div class="menu-item">
+      <img src="Foods/Halo-Halo-jpg.jpg" alt="Halo-Halo">
+      <h2 class="food-name">Ube Halo-Halo</h2>
+      <p class="food-desc">A layered Filipino ice cream dessert with ube ice cream fruit, and sweet beans.</p>
+      <p class="price">PRICE $8</p>
+      <button class="order-button">Order</button>
+    </div>
+  </div>
+
+  <div id="pork-menu" class="pork-menu">
+    <div class="menu-item">
+      <img src="Foods/Kare-Kare.jpg" alt="Halo-Halo">
+      <h2 class="food-name">Kare-Kare</h2>
+      <p class="food-desc">a Filipino stew made with tender oxtail and tripe, cooked in a rich peanut sauce infused with aromatics like garlic and onions</p>
+      <p class="price">PRICE $12</p>
+      <button class="order-button">Order</button>
+    </div>
+    
+    <div class="menu-item">
+      <img src="Foods/Sinigang.jpg" alt="Halo-Halo">
+      <h2 class="food-name">Sinigang</h2>
+      <p class="food-desc">A Filipino sour soup featuring tender pork simmered in tamarind broth, loaded with vegetables like radish, spinach, and okra.</p>
+      <p class="price">PRICE $10</p>
+      <button class="order-button">Order</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="Foods/Dinuguan.jpg" alt="Halo-Halo">
+      <h2 class="food-name">Dinuguan</h2>
+      <p class="food-desc">A Filipino delicacy of tender pork simmered in a rich, savory blood sauce with vinegar, garlic, and spices, served hot for a flavorful experience.</p>
+      <p class="price">PRICE $5</p>
+      <button class="order-button">Order</button>
+    </div>
+  </div>
+
+    <div  id="vegetarian-menu" class="vegetarian-menu">
+      <div class="menu-item">
+        <img src="Foods/Lumpiang-Sariwa.jpg" alt="Lumpaing Sariwa">
+        <h2 class="food-name">Lumpaing Sariwa</h2>
+        <p class="food-desc">Fresh spring rolls filled with vegetables, tofu, shrimp, and wrapped in a delicate crepe, served with sweet garlic sauce.</p>
+        <p class="price">PRICE $4</p>
+        <button class="order-button">Order</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="Foods/Chopsuey.jpg" alt="Chopsuey">
+        <h2 class="food-name">Chopsuey</h2>
+        <p class="food-desc">It features a medley of vegetables, meat, and often tofu, seasoned with soy sauce and served over rice.</p>
+        <p class="price">PRICE $8</p>
+        <button class="order-button">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="Foods/Ginataang-Kalabasa.jpg" alt="Ginataang-Kalabasa">
+        <h2 class="food-name">Ginataang Kalabasa</h2>
+        <p class="food-desc">Filipino dish of squash cooked in coconut milk with shrimp or fish, flavored with ginger, garlic, and chili. Creamy and savory</p>
+        <p class="price">PRICE $10</p>
+        <button class="order-button">Order</button>
+      </div>
+    </div>
+
+    <div  id="kakanin-menu" class="kakanin-menu">
+      <div class="menu-item">
+        <img src="Foods/Biko.jpg" alt="Biko">
+        <h2 class="food-name">Biko</h2>
+        <p class="food-desc"> Made of glutinous rice, coconut milk, and brown sugar, cooked until sticky and topped with latik (coconut caramel). </p>
+        <p class="price">PRICE $1</p>
+        <button class="order-button">Order</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="Foods/Sapin-Sapin.jpg" alt="Sapin-Sapin">
+        <h2 class="food-name">Sapin-Sapin</h2>
+        <p class="food-desc">A Filipino layered dessert made from glutinous rice flour, coconut milk, and sugar, featuring vibrant colors and flavors.</p>
+        <p class="price">PRICE $3</p>
+        <button class="order-button">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="Foods/Kutsinta.jpg" alt="Kutsinta">
+        <h2 class="food-name">Kutsinta</h2>
+        <p class="food-desc">Filipino steamed rice cakes made with rice flour, brown sugar, and lye water, often served as a sweet snack or dessert.</p>
+        <p class="price">PRICE $1.5</p>
+        <button class="order-button">Order</button>
+      </div>
+    </div>
+
+    <div  id="street-foods-menu" class="street-foods-menu">
+      <div class="menu-item">
+        <img src="Foods/Kikiam.jpg" alt="Kikiam">
+        <h2 class="food-name">Kikiam</h2>
+        <p class="food-desc">Filipino street food made of seasoned ground pork wrapped in bean curd skin, then deep-fried to crispy perfection.</p>
+        <p class="price">PRICE $1</p>
+        <button class="order-button">Order</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="Foods/Kwek-Kwek.jpg" alt="Kwek-Kwek">
+        <h2 class="food-name">Kwek-Kwek</h2>
+        <p class="food-desc">Filipino street food delicacy made of quail eggs coated in orange batter, deep-fried to crispy perfection, served with spicy vinegar.</p>
+        <p class="price">PRICE $3</p>
+        <button class="order-button">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="Foods/Fishball.jpg" alt="Fishball">
+        <h2 class="food-name">Fishball</h2>
+        <p class="food-desc">A popular street food made from fish paste, molded into balls and typically served skewered. A savory delight enjoyed in Asian cuisine.</p>
+        <p class="price">PRICE $1.5</p>
+        <button class="order-button">Order</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="receipt-box">
+          <h2 style=" font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">RECEIPT</h2>
+          <div class="receipt-content">
+            <!-- Content of the receipt will be dynamically populated -->    
+          </div>
+          <div class="total-amount">
+            <!-- Total amount will be displayed here -->
+          </div>
+          <div class="clear-button">
+            <button onclick="clearReceipt()" style="border: none;"></button>          
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">ORDER FORM</div>
+      <p>Bringing the flavors of the Philippines to your neighborhood</p>
+      <form action="#">
+        <div class="input-box">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="Aries Tolentino" />
+        </div>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="juandelacruz@gmail.com" />
+        </div>
+        <div class="input-box">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="0912 345 6789" />
+        </div>
+        <div class="input-box">
+          <div class="order-type">
+            <label for="order-type">Order Type</label>
+            <select id="order-type">
+              <option value="pick-up">Pick-up</option>
+              <option value="delivery">Delivery</option>
+              <option value="dine-in">Dine-in</option>
+              <option value="take-out">Take-out</option>
+            </select>
+          </div>
+        </div>                
+        <div class="input-box">
+          <div class="payment-method">
+            <label for="payment-method">Mode of Payment</label>
+            <select id="payment-method">
+              <option value="pick-up">Cash</option>
+              <option value="delivery">Debit</option>
+              <option value="dine-in">Credit</option>
+            </select>
+          </div>
+        
+        </div>
+        <div class="input-box">
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Street/Apartment Number - Locality - City - Barangay" /> 
+        </div>             
+        <div class="input-box message-box">            
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="button">
+          <input type="button" value="Place Order" />
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
