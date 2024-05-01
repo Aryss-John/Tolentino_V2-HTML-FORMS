@@ -10,6 +10,9 @@
       body::-webkit-scrollbar {
           display: none;
       }
+      html {
+        scroll-behavior: smooth;
+      }
   </style>
     <script src="https://cdn.tailwindcss.com"></script>    
 </head>
@@ -25,28 +28,30 @@
     </a>
     <!-- Order Now Button -->
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button" class="text-white bg-orange-700 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center ">Order Now</button>
+      <a href="#order">
+        <button  type="button" class="text-white bg-orange-700 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-500 font-medium rounded-lg text-sm px-4 py-2 text-center ">Order Now</button>
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
       </button>
+    </a>
     </div>
     <!-- Nav Articles -->
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-amber-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-amber-950">
         <li>
-          <a href="#" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 " aria-current="page">Home</a>
+          <a href="#home" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 " aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#best-sellers" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 ">About</a>
+          <a href="#best-sellers" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 ">Best Sellers</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 ">Services</a>
+          <a href="#menu" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 ">Menu</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 ">Contact</a>
+          <a href="#order" class="block py-2 px-3 text-white rounded hover:bg-orange-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 ">Contact</a>
         </li>
       </ul>
     </div>
@@ -54,7 +59,7 @@
   </nav>
      
 <!-- Carousel -->
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
+<div id="default-carousel" class="relative w-full pb-2" data-carousel="slide" id="home">
   <!-- Carousel wrapper -->
   <div class="relative h-56 overflow-hidden rounded-lg md:h-96 md:py-80 md:pt-56">
        <!-- Item 1 -->
@@ -100,31 +105,43 @@
 
 
 <!-- Best Sellers -->
-<section class="bg-orange-50 py-10" id="best-sellers">
-    <div class="py-10 px-4 mx-auto max-w-screen-xl text-center lg:pt-18 lg:px-12">
-        <h1 class="mb-5 text-4xl font-extrabold tracking-tight leading-none text-zinc-950 md:text-5xl lg:text-6xl">Try our <span class="underline underline-offset-3 decoration-8 decoration-orange-700">Best Sellers!</span></h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Dive into a world where crispy meets comfort, and every bite is a golden opportunity to indulge. It's not just food; it's a celebration of flavor that turns any day into Fryday!</p>
+<section class="bg-orange-50 py-12">
+    <div class="py-10 px-4 mx-auto max-w-screen-xl text-center lg:pt-18 lg:px-12" >
+        <h1 class="mb-5 text-4xl font-extrabold tracking-tight leading-none text-zinc-950 md:text-5xl lg:text-6xl" id="best-sellers">Try our <span class="underline underline-offset-3 decoration-8 decoration-orange-700">Best Sellers!</span></h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48" >Dive into a world where crispy meets comfort, and every bite is a golden opportunity to indulge. It's not just food; it's a celebration of flavor that turns any day into Fryday!</p>
     </div>
 
-<div class="flex flex-wrap justify-center px-10 pb-8">  
-    <div class="max-w-sm bg-amber-950  rounded-lg mx-auto mb-4">
-        <a href="#">
-            <img class="" src="Images/goldcrnch-best-seller.png" alt="" />
-        </a>
-        <div class="p-5">
-            <a href="#">
-                <h5 class="mb-3 text-4xl font-bold tracking-tight text-white">Golden Crunch Chicken <small class="ms-2 font-semibold text-orange-600 ">$7.50</small></h5>
-            </a>
-            <p class="mb-5 font-normal text-gray-200 ">Each bite boasts a tantalizing crunch, complemented by our secret blend of spices. Savor the golden goodness at our fast food haven today! </p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-md font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-500">
-                Add to cart         
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-    <div class="max-w-lg bg-amber-950 rounded-lg mx-auto mb-4">
+<div class="flex flex-wrap justify-center px-5 pb-8" >  
+
+    <!-- Golden Crunch Chicken -->
+    <div class="max-w-sm bg-amber-950 rounded-xl mx-auto mb-4">
+      <a href="#">
+          <img class="" src="Images/goldcrnch-best-seller.png" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-3 text-4xl font-bold tracking-tight text-white">Golden Crunch Chicken <small class="ms-2 font-semibold text-orange-600 ">$7.50</small></h5>
+          </a>
+          <p class="mb-5 font-normal text-gray-200 ">Each bite boasts a tantalizing crunch, complemented by our secret blend of spices. Savor the golden goodness at our fast food haven today! </p>
+  
+          <div class="text-center">
+              <button data-popover-target="popover-click" data-popover-trigger="click" type="button" class="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-600 font-semibold rounded-lg text-sm px-20 py-2.5">Place order</button>
+          </div>
+  
+          <div data-popover id="popover-click" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm transition-opacity duration-300 bg-stone-100 border-3 border-orange-100 rounded-lg shadow-sm opacity-0">
+              <div class="px-3 py-2 bg-emerald-600 rounded-t-lg">
+                  <h3 class="font-semibold text-stone-50">Order Confirmation</h3>
+              </div>
+              <div class="px-3 py-2 bg-stone-100 text-neutral-950">
+                  <p>Your order of <strong>Golden Crunch Chicken</strong> has been placed!</p>
+              </div>
+              <div data-popper-arrow></div>
+          </div>
+      </div>
+      </div>
+  
+    <!-- Big Bang Burger -->
+    <div class="max-w-sm bg-amber-950 rounded-2xl mx-auto mb-4">
         <a href="#">
             <img class="" src="Images/best-burger-m.png" alt="" />
         </a>
@@ -133,15 +150,25 @@
                 <h5 class="mb-3 text-4xl font-bold tracking-tight text-white ">Big Bang Burger <small class="ms-2 font-semibold text-orange-600 ">$10.00</small></h5>
             </a>
             <p class="mb-5 font-normal text-gray-200 "> Packed with juicy beef, crispy bacon, melted cheese, fresh lettuce, and our signature sauce, it's a cosmic delight that will leave your taste buds starry-eyed</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-md font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-500 ">
-                Add to cart      
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+
+            <div class="text-center">
+              <button data-popover-target="popover-click-two" data-popover-trigger="click" type="button" class="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-600 font-semibold rounded-lg text-sm px-20 py-2.5">Place order</button>
+          </div>
+  
+          <div data-popover id="popover-click-two" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm transition-opacity duration-300 bg-stone-100 border-3 border-orange-100 rounded-lg shadow-sm opacity-0">
+              <div class="px-3 py-2 bg-emerald-600 rounded-t-lg">
+                  <h3 class="font-semibold text-stone-50">Order Confirmation</h3>
+              </div>
+              <div class="px-3 py-2 bg-stone-100 text-neutral-950">
+                  <p>Your order for <strong>Big Bang Burger</strong> has been placed!</p>
+              </div>
+              <div data-popper-arrow></div>
+          </div>
         </div>
     </div>
-    <div class="max-w-sm bg-amber-950 rounded-lg mx-auto mb-4">
+
+    <!-- Fiesta Fries -->
+    <div class="max-w-sm bg-amber-950 rounded-xl mx-auto mb-4">
         <a href="#">
             <img class="" src="Images/fiesta-fries-bs.png" alt="" />
         </a>
@@ -149,13 +176,20 @@
             <a href="#">
                 <h5 class="mb-3 text-4xl font-bold tracking-tight text-white">Fiesta Fries <small class="ms-2 font-semibold text-orange-600 ">$6.00</small></h5>
             </a>
-            <p class="mb-5 font-normal text-gray-200 ">Crispy golden fries seasoned to perfection with a tantalizing blend of spices, guaranteed to add a zesty kick to your meal. Join the flavor fiesta today!</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-md font-medium text-center text-white  bg-orange-600 rounded-lg hover:bg-orange-500">
-                Add to cart          
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+            <p class="mb-5 font-normal text-gray-200 pb-11">Crispy golden fries seasoned to perfection with a tantalizing blend of spices, guaranteed to add a zesty kick to your meal. Join the flavor fiesta today!</p>
+            <div class="text-center">
+              <button data-popover-target="popover-click-three" data-popover-trigger="click" type="button" class="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-600 font-semibold rounded-lg text-sm px-20 py-2.5">Place order</button>
+          </div>
+  
+          <div data-popover id="popover-click-three" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm transition-opacity duration-300 bg-stone-100 border-3 border-orange-100 rounded-lg shadow-sm opacity-0">
+              <div class="px-3 py-2 bg-emerald-600 rounded-t-lg">
+                  <h3 class="font-semibold text-stone-50">Order Confirmation</h3>
+              </div>
+              <div class="px-3 py-2 bg-stone-100 text-neutral-950">
+                  <p>Your order for <strong>Fiesta Fries</strong> has been placed!</p>
+              </div>
+              <div data-popper-arrow></div>
+          </div>
         </div>
         
     </div>
@@ -164,7 +198,7 @@
 </section>
 
 <!-- Menu -->
-<div class="px-4 pb-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+<div class="px-4 pb-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8" id="menu">
 
     <!-- Featured Menu -->
     <div class="px-4 p-14 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -180,7 +214,7 @@
           <!-- View All Button -->
           <div class="text-center">            
             <div class="flex justify-center w-full mb-3 ml-auto">
-                <a href="/" class="inline-flex items-center justify-center w-full h-12 px-6 font-semibold transition duration-200 text-white bg-orange-950 border border-zinc-50 rounded-xl md:w-auto hover:bg-orange-600 focus:shadow-outline focus:outline-none">
+                <a href="#" class="inline-flex items-center justify-center w-full h-12 px-6 font-semibold transition duration-200 text-white bg-orange-950 border border-zinc-50 rounded-xl md:w-auto hover:bg-orange-600 focus:shadow-outline focus:outline-none">
                     View All
                   </a>
             </div>
@@ -249,7 +283,7 @@
 
 <!-- Order Form -->
 
-<section class="bg-orange-50">
+<section class="bg-orange-50" id="order">
   <div class="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
 
@@ -257,13 +291,37 @@
       <div class="lg:col-span-2 lg:py-12">
         
           <h1 class="mb-4 text-3xl font-extrabold text-zinc-950  md:text-5xl lg:text-6xl">EVERYDAY IS<span class="text-transparent bg-clip-text bg-gradient-to-r to-orange-700 from-orange-400"> FRYDAY</span> </h1>
-          <p class="text-lg font-normal text-gray-500 lg:text-xl ">Satisfy your hunger and cravings with our selection of carefully curated meals</p>
+          <p class="text-lg font-normal mb-10 text-gray-500 lg:text-xl ">Satisfy your hunger and cravings with our selection of carefully curated meals</p>
 
+           <!-- Receipt-->
+          <div class="rounded-lg bg-orange-950 p-8 shadow-lg lg:col-span-3 lg:p-12 mt-5">
+            <form action="#" class="space-y-15">          
+              <div>
+                <label class="sr-only" for="receipt">Receipt</label>
+                  <textarea
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Receipt"
+                  rows="8"
+                  id="receipt"
+                ></textarea>
+              </div>
+    
+              <div class="mt-4">
+                <button
+                  type="submit"
+                  class="inline-block w-full rounded-lg bg-orange-700 px-5 py-3 font-medium text-white sm:w-auto"
+                >
+                  Clear
+                </button>
+              </div>
+            </form>
+            </div>
+            
       </div>
 
       <!-- Right Side -->
       <div class="rounded-lg bg-orange-950 p-8 shadow-lg lg:col-span-3 lg:p-12">
-        <form action="#" class="space-y-4">
+        <form action="#" class="space-y-5">
 
           <!-- Name Input -->
           <div>
@@ -460,6 +518,7 @@
       </div>
   </div>
 </footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
